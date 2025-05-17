@@ -1,0 +1,54 @@
+ .neon-yellow {
+     text-shadow: 0 0 5px #FFD700, 0 0 10px #FFD700;
+ }
+
+ .neon-blue {
+     text-shadow: 0 0 5px #00FFFF, 0 0 10px #00FFFF;
+ }
+
+ .neon-red {
+     text-shadow: 0 0 5px #FF073A, 0 0 10px #FF073A;
+ }
+
+ .rubik-dirt-regular {
+     font-family: "Rubik Dirt", system-ui;
+     font-weight: 400;
+     font-style: normal;
+ }
+
+ .rubik-doodle-triangles-regular {
+     font-family: "Rubik Doodle Triangles", system-ui;
+     font-weight: 400;
+     font-style: normal;
+ }
+
+ .rubik-regular {
+     font-family: "Rubik", sans-serif;
+     font-optical-sizing: auto;
+     font-weight: 400;
+     font-style: normal;
+ }
+
+ .exo-2-regular {
+     font-family: "Exo 2", sans-serif;
+     font-optical-sizing: auto;
+     font-weight: 400;
+     font-style: normal;
+ }
+
+ .russo-one-regular {
+     font-family: "Russo One", sans-serif;
+     font-weight: 400;
+     font-style: normal;
+ }
+
+
+
+ .saira-regular {
+     font-family: "Saira", sans-serif;
+     font-optical-sizing: auto;
+     font-weight: 400;
+     font-style: normal;
+     font-variation-settings:
+         "wdth" 100;
+ }
