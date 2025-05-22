@@ -68,6 +68,26 @@
         0 0 16px #ff6e40;
 }
 
+/* Neon‐orange border with glow for headshots */
+.headshot {
+    max-width: 100%;
+  /* 1) crisp neon border */
+  border: 4px solid #ff6e40;  /* neon-orange */
+
+  /* 2) layered glow */
+  box-shadow:
+    0 0 8px 2px rgba(255,110,64,0.8),
+    0 0 16px 4px rgba(255,110,64,0.6),
+    0 0 24px 6px rgba(255,110,64,0.4);
+
+  border-radius: 5%;
+
+  /* 4) ensure it sits above any overlay */
+  position: relative;
+  z-index: 2;
+}
+
+
 /* Ensure #about can mask its contents */
 #about {
     overflow: hidden;
