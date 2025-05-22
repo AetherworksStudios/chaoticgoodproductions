@@ -5,7 +5,7 @@
         0 0 6px #ffeb3b;
 }
 
-.neon-yellow:hover {
+.neon-yellow-glow:hover {
     text-shadow:
         0 0 4px #ffeb3b,
         0 0 8px #ffeb3b,
@@ -19,7 +19,7 @@
         0 0 6px #00FFFF;
 }
 
-.neon-blue:hover {
+.neon-blue-glow:hover {
     text-shadow:
         0 0 4px #00FFFF,
         0 0 8px #00FFFF,
@@ -33,7 +33,7 @@
         0 0 6px #FF073A;
 }
 
-.neon-red:hover {
+.neon-red-glow:hover {
     text-shadow:
         0 0 4px #FF073A,
         0 0 8px #FF073A,
@@ -47,7 +47,7 @@
         0 0 6px #d500f9;
 }
 
-.neon-purple:hover {
+.neon-purple-glow:hover {
     text-shadow:
         0 0 4px #d500f9,
         0 0 8px #d500f9,
@@ -61,7 +61,7 @@
         0 0 6px #ff6e40;
 }
 
-.neon-orange:hover {
+.neon-orange-glow:hover {
     text-shadow:
         0 0 4px #ff6e40,
         0 0 8px #ff6e40,
@@ -87,15 +87,14 @@
     bottom: 0;
     width: 50%;
     background-color: #700;
-    /* velvet base */
     background-image:
-        /* dark crease shadows every 30px */
+        /* dark crease shadows */
         repeating-linear-gradient(to right,
             rgba(0, 0, 0, 0.4) 0px,
             rgba(0, 0, 0, 0.4) 2px,
             transparent 2px,
             transparent 30px),
-        /* light highlights every 30px, offset by 15px */
+        /* light highlights */
         repeating-linear-gradient(to right,
             rgba(255, 255, 255, 0.1) 0px,
             rgba(255, 255, 255, 0.1) 1px,
@@ -104,8 +103,14 @@
     background-blend-mode: overlay;
     filter: url(#fabricNoise) contrast(1.2);
     z-index: 5;
-    animation: open-left 2s ease-out forwards;
+
+    /* 🚫 Remove this: */
+    /* animation: open-left 2s ease-out forwards; */
+
+    /* 🔒 Pause any animation until we enable it */
+    animation-play-state: paused;
 }
+
 
 /* Position each half and its animation */
 .curtain-left {
@@ -117,6 +122,19 @@
     right: 0;
     animation-name: open-right;
 }
+
+/* when #about.open appears, run each side’s animation */
+#about.open .curtain-left {
+    animation: open-left 2s ease-out forwards;
+    animation-play-state: running;
+}
+
+#about.open .curtain-right {
+    animation: open-right 2s ease-out forwards;
+    animation-play-state: running;
+}
+
+
 
 /* Slide panels off-screen */
 @keyframes open-left {
