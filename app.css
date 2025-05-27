@@ -71,20 +71,21 @@
 /* Neon‐orange border with glow for headshots */
 .headshot {
     max-width: 100%;
-  /* 1) crisp neon border */
-  border: 4px solid #ff6e40;  /* neon-orange */
+    /* 1) crisp neon border */
+    border: 4px solid #ff6e40;
+    /* neon-orange */
 
-  /* 2) layered glow */
-  box-shadow:
-    0 0 8px 2px rgba(255,110,64,0.8),
-    0 0 16px 4px rgba(255,110,64,0.6),
-    0 0 24px 6px rgba(255,110,64,0.4);
+    /* 2) layered glow */
+    box-shadow:
+        0 0 8px 2px rgba(255, 110, 64, 0.8),
+        0 0 16px 4px rgba(255, 110, 64, 0.6),
+        0 0 24px 6px rgba(255, 110, 64, 0.4);
 
-  border-radius: 5%;
+    border-radius: 5%;
 
-  /* 4) ensure it sits above any overlay */
-  position: relative;
-  z-index: 2;
+    /* 4) ensure it sits above any overlay */
+    position: relative;
+    z-index: 2;
 }
 
 
@@ -171,19 +172,54 @@
 
 
 
-
-.rubik-dirt-regular {
-    font-family: "Rubik Dirt", system-ui;
-    font-weight: 100;
-    font-style: normal;
+.poppins-regular {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
 }
 
-
-.rubik-doodle-triangles-regular {
-    font-family: "Rubik Doodle Triangles", system-ui;
+/* Warm, high-contrast serif for long reads */
+.lora-regular {
+    font-family: 'Lora', serif;
     font-weight: 400;
     font-style: normal;
 }
+
+/* Headings in a tight, slightly quirky grotesk */
+.space-grotesk-regular {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+}
+
+/* Body copy that’s neutral and super legible */
+.inter-regular {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+
+/* Elegant, ultra-thin / heavy display font */
+.raleway-regular {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    letter-spacing: 0.03em;
+}
+
+/* Mechanical sans for maximum clarity */
+.roboto-regular {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+
+
+.rubik-dirt-regular {
+    font-family: "Rubik Dirt", system-ui;
+    font-weight: 700;
+    font-style: normal;
+}
+
 
 .rubik-regular {
     font-family: "Rubik", sans-serif;
@@ -199,20 +235,62 @@
     font-style: normal;
 }
 
-.russo-one-regular {
-    font-family: "Russo One", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+/* app.css */
+
+/* Elegant, high-contrast serif for headlines */
+.playfair-display {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
 }
 
-.saira-regular {
-    font-family: "Saira", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-variation-settings:
-        "wdth" 100;
+/* Neutral, legible sans for body text */
+.source-sans-pro {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    line-height: 1.6;
 }
+
+/* Condensed impact font for section titles */
+.oswald {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+}
+
+/* Friendly, warm sans for paragraphs */
+.lato {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+/* Modern, technical edge for subtitles or intros */
+.barlow-condensed {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+}
+
+/* Versatile workhorse for general UI */
+.open-sans {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+/* Sharp, squared nav links or small headings */
+.russo-one-regular {
+    font-family: 'Russo One', sans-serif;
+    font-weight: 400;
+}
+
+/* Compact, slightly condensed for metadata or small text */
+.saira {
+    font-family: 'Saira', sans-serif;
+    font-weight: 300;
+    line-height: 1.4;
+}
+
+
 
 /* semi-transparent dark overlay behind text */
 #about .overlay {
